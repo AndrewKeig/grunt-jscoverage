@@ -6,7 +6,6 @@ Grunt task for jscoverage; which will parse your source code and generate an ins
 This module requires [node-jscoverage](https://github.com/visionmedia/node-jscoverage) in order to function:
 
 
-
 ## Installation
 
 Install npm package
@@ -19,6 +18,8 @@ Add this line to your project's `Gruntfile.js`:
 
 
 ## Usage
+
+note: this task will delete the contents of the output-directory; if one exists; before attempting to parse source.
 
 ````
 grunt.initConfig({

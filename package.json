@@ -30,6 +30,8 @@
     "keywords": [
     "gruntplugin",
     "jscoverage",
-    "code coverage"
-  ],
+    "code coverage",
+    "mocha",
+    "vows"
+  ]
 }
