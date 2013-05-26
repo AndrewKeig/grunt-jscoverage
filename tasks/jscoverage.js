@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = function(grunt) {
-  grunt.registerTask("jscoverage", "parses your source code and generates an instrumented version allowing testing tools to generate code coverage reports", function() {
+  grunt.registerTask("jscoverage", "Grunt task for jscoverage; which will parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports", function() {
 
   var done = this.async();
   var options = this.options();

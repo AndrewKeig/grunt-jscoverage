@@ -1,6 +1,6 @@
 {
   "name": "grunt-jscoverage",
-  "description": "Grunt task to parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports",
+  "description": "Grunt task for jscoverage; which will parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports",
   "version": "0.0.1",
   "homepage": "https://github.com/andrewkeig/grunt-jscoverage",
   "author": {
