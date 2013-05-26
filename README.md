@@ -10,7 +10,7 @@ This module requires [node-jscoverage](https://github.com/visionmedia/node-jscov
 
 Install npm package
 
-    npm install grunt-mocha-cli --save-dev
+    npm install grunt-jscoverage --save-dev
 
 Add this line to your project's `Gruntfile.js`:
 
