@@ -3,11 +3,8 @@ grunt-jscoverage
 
 Grunt task for jscoverage; which will parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports.
 
-This module requires node-jscoverage in order to function:
+This module requires [node-jscoverage](https://github.com/visionmedia/node-jscoverage) in order to function:
 
-https://github.com/visionmedia/node-jscoverage
-
-[https://github.com/visionmedia/node-jscoverage](https://github.com/visionmedia/node-jscoverage)
 
 
 ## Installation
@@ -34,9 +31,9 @@ grunt.initConfig({
   });
 ````
 
+## Run
 ````
 grunt jscoverage
->> Use default config/development.json
 
 ````
 
