@@ -22,18 +22,17 @@ Add this line to your project's `Gruntfile.js`:
 
 ````
 grunt.initConfig({
-    jscoverage: {
-      options: {
-        inputDirectory: 'lib',
-        outputDirectory: 'lib-cov'
-      }
+  jscoverage: {
+    options: {
+      inputDirectory: 'lib',
+      outputDirectory: 'lib-cov'
     }
-  });
+  }
+});
 ````
 
 ## Run
 ````
 grunt jscoverage
-
 ````
 
