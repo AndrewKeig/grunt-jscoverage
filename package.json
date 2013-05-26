@@ -1,0 +1,35 @@
+{
+  "name": "grunt-jscoverage",
+  "description": "Grunt task to parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andrewkeig/grunt-jscoverage",
+  "author": {
+    "name": "Andrew Keig",
+    "email": "andrew.keig@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrewkeig/grunt-jscoverage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewkeig/grunt-jscoverage/issues"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+    "keywords": [
+    "gruntplugin",
+    "jscoverage",
+    "code coverage"
+  ],
+}
