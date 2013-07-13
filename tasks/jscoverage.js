@@ -6,12 +6,6 @@ module.exports = function(grunt) {
   var done = this.async();
   var options = this.options();
 
-  if (options.outputDirectory == "lib") { 
-    grunt.log.error("Are you sure you want to delete lib?  please use a different output directory");
-    done(false);
-    return;
-  }
-
   if (grunt.file.exists(options.outputDirectory)) grunt.file.delete(options.outputDirectory);
 
   var args2 = [];
