@@ -18,7 +18,7 @@ module.exports = function(grunt) {
   args2.push(options.inputDirectory);
   args2.push(options.outputDirectory);
 
-  if (options.highlight) args2.push('--no-highlight');
+  if (!options.highlight) args2.push('--no-highlight');
   if (options.exclude) args2.push('--exclude=' + options.exclude);
   if (options.encoding) args2.push('--encoding=' + options.encoding);
   if (options.noInstrument) args2.push('--no-instrument=' + options.noInstrument);
