@@ -8,7 +8,12 @@ module.exports = function(grunt) {
     jscoverage: {
       options: {
         inputDirectory: 'lib',
-        outputDirectory: 'lib-cov'
+        outputDirectory: 'lib-cov',
+        highlight: false,
+        exclude: '',
+        encoding: '',
+        noInstrument: '',
+        jsVersion: ''
       }
     }
   });

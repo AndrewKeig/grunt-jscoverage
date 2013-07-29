@@ -37,3 +37,18 @@ grunt.initConfig({
 grunt jscoverage
 ````
 
+## Options
+
+The following options are also available:
+
+````
+options: {
+	inputDirectory: 'lib',
+	outputDirectory: 'lib-cov',
+	highlight: false,
+	exclude: '',
+	encoding: '',
+	noInstrument: '',
+	jsVersion: ''
+}
+````
