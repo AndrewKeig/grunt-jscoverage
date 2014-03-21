@@ -1,53 +1,47 @@
 grunt-jscoverage
-==============
+================
 
 Grunt task for jscoverage; which will parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports.
 
-[![NPM](https://nodei.co/npm/grunt-jscoverage.png?downloads=true)](https://nodei.co/npm/grunt-jscoverage/)
+[![NPM stats](https://nodei.co/npm/grunt-jscoverage.png?downloads=true)](https://nodei.co/npm/grunt-jscoverage/)
 
-## Installation
+## Install
 
 Install npm package
 
     npm install grunt-jscoverage --save-dev
 
-Add this line to your project's `Gruntfile.js`:
+Add this line to your project's Gruntfile:
 
     grunt.loadNpmTasks("grunt-jscoverage");
 
 
-## Usage
+## Configure
 
-note: this task will delete the contents of the output-directory; if one exists; before attempting to parse source.
+**Note:** jscoverage will delete contents of the output directory, if one exists, before attempting to parse source files.
 
-````
+```javascript
 grunt.initConfig({
   jscoverage: {
+    lib: {
+      src: 'lib',
+      dest: 'lib-cov'
+    },
+    boo: {
+      src: 'boo',
+      dest: 'boo-cov'
+    },
     options: {
-      inputDirectory: 'lib',
-      outputDirectory: 'lib-cov'
+      exclude: ['you.js', 'meow']
     }
   }
 });
-````
+```
+
+The `exclude` option accepts strings, regexes and arrays of them.
 
 ## Run
-````
+
+```
 grunt jscoverage
-````
-
-## Options
-
-The following options are also available:
-
-````
-options: {
-	inputDirectory: 'lib',
-	outputDirectory: 'lib-cov',
-	highlight: false,
-	exclude: '',
-	encoding: '',
-	noInstrument: '',
-	jsVersion: ''
-}
-````
+```

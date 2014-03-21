@@ -6,14 +6,16 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     jscoverage: {
+      lib: {
+        src: 'lib',
+        dest: 'lib-cov'
+      },
+      boo: {
+        src: 'boo',
+        dest: 'boo-cov'
+      },
       options: {
-        inputDirectory: 'lib',
-        outputDirectory: 'lib-cov',
-        highlight: false,
-        exclude: '',
-        encoding: '',
-        noInstrument: '',
-        jsVersion: ''
+        exclude: ['you.js', 'meow']
       }
     }
   });

@@ -1,7 +1,7 @@
 {
   "name": "grunt-jscoverage",
   "description": "Grunt task for jscoverage; which will parse your source code and generate an instrumented version allowing testing tools to generate code coverage reports",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "homepage": "https://github.com/andrewkeig/grunt-jscoverage",
   "author": {
     "name": "Andrew Keig",
@@ -19,7 +19,8 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "jscoverage": "^0.3.8"
   },
   "devDependencies": {
     "grunt": "~0.4.1"
@@ -27,7 +28,7 @@
   "peerDependencies": {
     "grunt": "~0.4.1"
   },
-    "keywords": [
+  "keywords": [
     "gruntplugin",
     "jscoverage",
     "code coverage",
