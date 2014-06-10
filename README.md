@@ -40,6 +40,9 @@ grunt.initConfig({
 
 The `exclude` option accepts strings, regexes and arrays of them.
 
+Other options will be passed to jscoverage as is. Unfortunately, jscoverage doesn't provide any documentation about its programmatic API, so take a look at function `processFile()` in its file [`index.js`](https://github.com/fishbar/jscoverage/blob/master/index.js) for details.
+
+
 ## Run
 
 ```
