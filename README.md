@@ -18,29 +18,33 @@ Add this line to your project's Gruntfile:
 
 ## Configure
 
-**Note:** jscoverage will delete contents of the output directory, if one exists, before attempting to parse source files.
-
 ```javascript
 grunt.initConfig({
   jscoverage: {
-    lib: {
-      src: 'lib',
-      dest: 'lib-cov'
+    src: {
+      expand: true,
+      cwd: 'src/',
+      src: ['**/*.js'],
+      dest: 'src-cov/',
+      ext: '.js',
     },
-    boo: {
-      src: 'boo',
-      dest: 'boo-cov'
+    otherstuff: {
+      expand: true,
+      cwd: 'otherstuff/',
+      src: ['**/*.js'],
+      dest: 'otherstuff-cov/',
+      ext: '.js',
     },
     options: {
-      exclude: ['you.js', 'meow']
+      // custom options
     }
   }
 });
 ```
 
-The `exclude` option accepts strings, regexes and arrays of them.
+See [Grunt docs](http://gruntjs.com/configuring-tasks) for detailed explanation.
 
-Other options will be passed to jscoverage as is. Unfortunately, jscoverage doesn't provide any documentation about its programmatic API, so take a look at function `processFile()` in its file [`index.js`](https://github.com/fishbar/jscoverage/blob/master/index.js) for details.
+Options will be passed to jscoverage as is. Unfortunately, jscoverage doesn't provide any documentation about its programmatic API, so take a look at function `processFile()` in its file [`index.js`](https://github.com/fishbar/jscoverage/blob/master/index.js) for details.
 
 
 ## Run

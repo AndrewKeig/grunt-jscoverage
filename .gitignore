@@ -1,5 +1,8 @@
-# node
-node_modules
+# Third-party Node.js modules
+node_modules/
+
+# Test coverage
+tasks-cov/
 
 # Numerous always-ignore extensions
 *.diff

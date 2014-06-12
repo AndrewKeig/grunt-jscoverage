@@ -6,16 +6,15 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     jscoverage: {
-      lib: {
-        src: 'lib',
-        dest: 'lib-cov'
-      },
-      boo: {
-        src: 'boo',
-        dest: 'boo-cov'
+      tasks: {
+        expand: true,
+        cwd: 'tasks/',
+        src: ['**/*.js'],
+        dest: 'tasks-cov/',
+        ext: '.js',
       },
       options: {
-        exclude: ['you.js', 'meow']
+        // empty
       }
     }
   });
