@@ -2,3 +2,4 @@ Gruntfile.js
 test
 node_modules
 npm-debug.log
+tasks-cov
